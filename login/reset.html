@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<!-- Created by CodingLab |www.youtube.com/c/CodingLabYT-->
+<html lang="en" dir="ltr">
+  <head>
+    <link rel="shortcut icon" type="image/x-icon" href="../images/logo.png">
+    <title>Amaly</title>
+    <meta charset="UTF-8">
+    <!--<title> Login and Registration Form in HTML & CSS | CodingLab </title>-->
+    <link rel="stylesheet" href="style.css">
+    <!-- Fontawesome CDN Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css"
+  />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+<style>
+   .password-container {
+      position: relative;
+      width: 250px; /* يمكنك تغيير العرض كما ترغب */
+    }
+
+    .password-input {
+      width: 100%;
+      padding: 10px;
+      padding-right: 40px; /* مساحة لزر العين */
+      box-sizing: border-box;
+    }
+
+    .toggle-password {
+      position: absolute;
+      right: 10px;
+      top: 50%;
+      transform: translateY(-50%);
+      cursor: pointer;
+      font-size: 1.2em; /* حجم الأيقونة */
+    }
+    .checkbox-container {
+      display: flex;
+      align-items: center;
+      margin-top: 10px;
+    }
+
+    .checkbox-container label {
+      margin-left: 5px;
+      
+    }
+    @media (width<1024px) {
+
+.cover{
+  display: none;
+}
+.logo{
+  position: relative;
+}
+.showPassword{
+  margin-right: 259px;
+}
+#forgots{
+  line: height 30px;
+  margin-left: 10%
+}
+.showPassword{
+  margin-right: 5%;
+
+}
+body{
+  width: 160%;
+}}
+.container2 {
+  position: relative;
+  max-width: 100%;
+  width: 100%;
+  background: #fff;
+  padding: 70px 40px;
+
+}
+.front {
+    width: 180%;
+
+}
+</style>
+   </head>
+<body>
+  
+  <div class="container2">
+ 
+    <div class="cover">
+      <div class="front" >
+        <img  src="images/pexels-pixabay-356040.jpg" alt="">
+        <div class="text">
+          <span class="text-1">Can’t go to the hospital? Book video call appointments with your doctor within the app in a few minutes </span>
+        </div>
+     
+      </div>
+  
+      
+    </div>
+    
+    <div class="forms">
+        <div class="form-content">
+          <div class="login-form" style="margin-right: 48%;">
+            <div class="logo">
+              <img src="../images/logo.png" class="logo1" style="width:60px;" alt="Logo">
+              <img src="../images/logo1.png" class="logo2" style="margin-bottom: 10px;width:100px;" alt="Logo">
+            </div>
+            <form class="log" action="#">
+              <div style="color: #4D4E59;
+                          margin-bottom: 5%;
+                          margin-top: 10%;
+
+              font-family: Calibri;
+              font-size: 30px;
+              font-style: normal;
+              font-weight: 700;
+              line-height: 15px; /* 66.667% */"><p>Reset Password</p>
+              <br>
+            <span class="enter" style="color: #7B7B7B;
+            font-family: Calibri;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 40px; /* 200% */">Enter your new password to can enter to your account</span>  
+            </div>
+          
+            <div class="input-boxes" style="margin-bottom: 20px;">
+
+                <h3 style="margin-bottom: 8px;font-size: 12px;">Password</h3>
+                <div class="password-container">
+                  <input id="password" type="password" style="width: 222%;
+                  height: 38px;
+                  flex-shrink: 0;border-radius: 36px;
+                  background: #F5F5F7;border: none;" class="password-input" placeholder="   Enter your password" />
+                  <span class="toggle-password" id="togglePassword">
+                    <i class="fas fa-eye-slash" style="color: rgba(82, 69, 157, 1) ;margin-left: 1250%;"></i>
+                  </span>
+                  
+                </div>
+                </div>
+                <div class="input-boxes" style="margin-bottom: 20px;">
+                <h3 style="margin-bottom: 8px;font-size: 12px;">Confirm Password</h3>
+                <div class="password-container">
+                  <input id="conpassword" type="password" style="width: 222%;
+                  height: 38px;
+                  flex-shrink: 0;border-radius: 36px;
+                  background: #F5F5F7;border: none;" class="password-input" placeholder="   Confirm Password" />
+                  <span class="toggle-password" id="toggleconPassword">
+                    <i class="fas fa-eye-slash" style="color: rgba(82, 69, 157, 1) ;margin-left:1250%;"></i>
+                  </span>
+                  
+                </div>
+                </div>
+                <div class="input-boxes">
+
+                    <div  class="button input-box" style="text-decoration: none; margin-top: 25px;margin-bottom:15px;">   
+
+                        <a href="../index.html" style="width: 551px;
+                        border-radius: 30px;
+                      border: 1px solid #52459D;
+                      background: #52459D;
+                      text-decoration: none;
+                      color: white;
+                      text-align: center;
+                      line-height: 40px;
+                        height: 39px;
+                        flex-shrink: 0;" type="submit">            Login
+        </a>
+                        </div>
+               
+
+
+
+              </div>
+
+            </form>
+          </div>
+          
+          
+        
+    </div>
+    </div>
+  </div>
+  <script>
+  const passwordInput = document.getElementById('password');
+    const togglePassword = document.getElementById('togglePassword');
+
+    togglePassword.addEventListener('click', function() {
+      // تغيير نوع الحقل بين password و text
+      const type = passwordInput.getAttribute('type') === 'password' ? 'text' : 'password';
+      passwordInput.setAttribute('type', type);
+
+      // تغيير الأيقونة عند التبديل
+      this.innerHTML = type === 'password' ? '<i class="fas fa-eye-slash" style="color: rgba(82, 69, 157, 1) ;margin-left: 1250%;"></i>' : '<i class="fas fa-eye"  style="color: rgba(82, 69, 157, 1) ;margin-left: 1400%;"></i>';
+    });
+    const conpasswordInput = document.getElementById('conpassword');
+    const toggleconPassword = document.getElementById('toggleconPassword');
+
+    toggleconPassword.addEventListener('click', function() {
+      // تغيير نوع الحقل بين password و text
+      const type = conpasswordInput.getAttribute('type') === 'password' ? 'text' : 'password';
+      conpasswordInput.setAttribute('type', type);
+
+      // تغيير الأيقونة عند التبديل
+      this.innerHTML = type === 'password' ? '<i class="fas fa-eye-slash" style="color: rgba(82, 69, 157, 1) ;margin-left: 1250%;"></i>' : '<i class="fas fa-eye"  style="color: rgba(82, 69, 157, 1) ;margin-left: 1400%;"></i>';
+    });
+    
+  </script></body>
+</html>

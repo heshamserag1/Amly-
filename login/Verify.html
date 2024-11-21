@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<!-- Created by CodingLab |www.youtube.com/c/CodingLabYT-->
+<html lang="en" dir="ltr">
+  <head>
+    <link rel="shortcut icon" type="image/x-icon" href="../images/logo.png">
+    <title>Amaly</title>
+    <meta charset="UTF-8">
+    <!--<title> Login and Registration Form in HTML & CSS | CodingLab </title>-->
+    <link rel="stylesheet" href="style.css">
+    <!-- Fontawesome CDN Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css"
+  />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+<style>
+   .password-container {
+      position: relative;
+      width: 250px; /* يمكنك تغيير العرض كما ترغب */
+    }
+.verification-input{
+
+}
+    .password-input {
+      width: 100%;
+      padding: 10px;
+      padding-right: 40px; /* مساحة لزر العين */
+      box-sizing: border-box;
+    }
+
+    .toggle-password {
+      position: absolute;
+      right: 10px;
+      top: 50%;
+      transform: translateY(-50%);
+      cursor: pointer;
+      font-size: 1.2em; /* حجم الأيقونة */
+    }
+    .checkbox-container {
+      display: flex;
+      align-items: center;
+      margin-top: 10px;
+    }
+
+    .checkbox-container label {
+      margin-left: 5px;
+      
+    }
+    @media (width<1024px) {
+
+.cover{
+  display: none;
+}
+.logo{
+  position: relative;
+}
+#forgots{
+  line: height 30px;
+  margin-left: 10%
+}
+.showPassword{
+  margin-right: 5%;
+
+}
+body{
+  width: 160%;
+
+}
+}
+.verification-container {
+      display: flex;
+      gap: 20px; /* المسافة بين الحقول */
+      margin-top: 20px;
+      margin-left: 10%;
+    }
+
+    .verification-input {
+      width: 100px; /* عرض الحقل */
+      height: 65px; /* ارتفاع الحقل */
+      font-size: 24px; /* حجم الخط */
+      text-align: center; /* محاذاة النص في المنتصف */
+      outline: none; /* إزالة إطار التركيز */
+      border-radius: 20px;
+background: #F5F5F7;
+border: none;
+    }
+
+    .verification-input:focus {
+      border-color: #007bff; /* تغيير لون الحدود عند التركيز */
+    }
+</style>
+   </head>
+<body>
+  
+  <div class="container2">
+ 
+    <div class="cover">
+      <div class="front" >
+        <img  src="images/pexels-fr3nks-287227.jpg" alt="">        <div class="text">
+          <span class="text-1">Find experienced specialist doctors with expert rating and review and book your appointments hassle-free
+<br>
+<div style="display: flex;margin-top: 15px;margin-left:70px;">
+<div style="width: 100px;
+height: 10px;
+flex-shrink: 0;border-radius: 4px;
+background: #2EBAB1;margin-right: 5px;"></div>
+<div style="width: 100px;
+height: 10px;
+flex-shrink: 0;border-radius: 4px;
+background: #2EBAB1;margin-right: 5px;"></div>
+<div style="width: 100px;
+height: 10px;
+flex-shrink: 0;border-radius: 4px;
+background: rgba(217, 217, 217, 0.50);margin-right: 5px;"></div><div style="width: 100px;
+height: 10px;
+flex-shrink: 0;border-radius: 4px;
+background: rgba(217, 217, 217, 0.50);margin-right: 5px;"></div>
+<div style="width: 100px;
+height: 10px;
+flex-shrink: 0;border-radius: 4px;
+background: rgba(217, 217, 217, 0.50);"></div>
+          </span>
+       </div>
+        </div>
+     
+      </div>
+  
+      
+      
+    </div>
+    
+    <div class="forms">
+        <div class="form-content">
+          <div class="login-form" style="margin-right: 48%;">
+            <div class="logo">
+              <img src="../images/logo.png" class="logo1" style="width:60px;" alt="Logo">
+              <img src="../images/logo1.png" class="logo2" style="margin-bottom: 10px;width:100px;" alt="Logo">
+            </div>
+            <form class="log" action="#">
+              <div style="color: #4D4E59;
+                          margin-bottom: 5%;
+                          margin-top: 20%;
+                          margin-left: 2%;
+
+              font-family: Calibri;
+              font-size: 30px;
+              font-style: normal;
+              font-weight: 700;
+              line-height: 15px; /* 66.667% */"><p>Verify Phone Number</p>
+              <br>
+              <span class="enter" style="color: #7B7B7B;
+            font-family: Calibri;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 40px; /* 200% */">Please type a code that we send to <a href="" style="font-weight: 500;text-decoration: none; color: black;"> +201220789797</a><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" style="margin-left: 6px;" viewBox="0 0 20 20" fill="none">
+  <g clip-path="url(#clip0_413_653)">
+    <path d="M15.5466 0.774979L5.38664 10.935C4.99859 11.3209 4.69096 11.78 4.48154 12.2857C4.27213 12.7913 4.1651 13.3335 4.16664 13.8808V15C4.16664 15.221 4.25444 15.433 4.41072 15.5892C4.567 15.7455 4.77896 15.8333 4.99998 15.8333H6.11914C6.66644 15.8349 7.20862 15.7278 7.71427 15.5184C8.21993 15.309 8.67902 15.0014 9.06498 14.6133L19.225 4.45331C19.712 3.96512 19.9855 3.30371 19.9855 2.61415C19.9855 1.92458 19.712 1.26317 19.225 0.774979C18.7297 0.301557 18.071 0.0373535 17.3858 0.0373535C16.7007 0.0373535 16.0419 0.301557 15.5466 0.774979ZM18.0466 3.27498L7.88664 13.435C7.41675 13.902 6.78165 14.1649 6.11914 14.1666H5.83331V13.8808C5.83505 13.2183 6.09795 12.5832 6.56498 12.1133L16.725 1.95331C16.903 1.78327 17.1397 1.68839 17.3858 1.68839C17.632 1.68839 17.8687 1.78327 18.0466 1.95331C18.2216 2.12874 18.3198 2.36639 18.3198 2.61415C18.3198 2.8619 18.2216 3.09955 18.0466 3.27498Z" fill="#2EBAB1"/>
+    <path d="M19.1667 7.4825C18.9457 7.4825 18.7337 7.5703 18.5774 7.72658C18.4211 7.88286 18.3333 8.09482 18.3333 8.31583V12.5H15C14.337 12.5 13.7011 12.7634 13.2322 13.2322C12.7634 13.7011 12.5 14.337 12.5 15V18.3333H4.16667C3.50363 18.3333 2.86774 18.0699 2.3989 17.6011C1.93006 17.1323 1.66667 16.4964 1.66667 15.8333V4.16667C1.66667 3.50363 1.93006 2.86774 2.3989 2.3989C2.86774 1.93006 3.50363 1.66667 4.16667 1.66667H11.7017C11.9227 1.66667 12.1346 1.57887 12.2909 1.42259C12.4472 1.26631 12.535 1.05435 12.535 0.833333C12.535 0.61232 12.4472 0.400358 12.2909 0.244078C12.1346 0.0877974 11.9227 0 11.7017 0L4.16667 0C3.062 0.00132321 2.00297 0.440735 1.22185 1.22185C0.440735 2.00296 0.00132321 3.062 0 4.16667L0 15.8333C0.00132321 16.938 0.440735 17.997 1.22185 18.7782C2.00297 19.5593 3.062 19.9987 4.16667 20H13.6192C14.1666 20.0016 14.7089 19.8945 15.2147 19.6851C15.7205 19.4757 16.1797 19.1681 16.5658 18.78L18.7792 16.565C19.1673 16.1791 19.475 15.72 19.6846 15.2143C19.8941 14.7087 20.0013 14.1665 20 13.6192V8.31583C20 8.09482 19.9122 7.88286 19.7559 7.72658C19.5996 7.5703 19.3877 7.4825 19.1667 7.4825ZM15.3875 17.6017C15.0525 17.9358 14.6289 18.1672 14.1667 18.2683V15C14.1667 14.779 14.2545 14.567 14.4107 14.4107C14.567 14.2545 14.779 14.1667 15 14.1667H18.2708C18.1677 14.6279 17.9367 15.0508 17.6042 15.3867L15.3875 17.6017Z" fill="#2EBAB1"/>
+  </g>
+  <defs>
+    <clipPath id="clip0_413_653">
+      <rect width="20" height="20" fill="white"/>
+    </clipPath>
+  </defs>
+</svg><a href="" style="color: rgba(46, 186, 177, 1);margin-left: 3px; text-decoration: none; ">Edit</a></span>  
+            </div>
+            
+              <div class="input-boxes">
+                <h4>OTP Code</h4>
+                <div class="verification-container">
+                    <input type="text" class="verification-input" maxlength="1" />
+                    <input type="text" class="verification-input" maxlength="1" />
+                    <input type="text" class="verification-input" maxlength="1" />
+                    <input type="text" class="verification-input" maxlength="1" />
+                  </div>
+                  <div class="checkbox-container" style="display:flex">
+                    <label for="showPassword" class="showPassword" style="color: #7B7B7B;
+                    text-align: center;
+                    font-family: Calibri;
+                    font-size: 15px;
+                    font-style: normal;
+                    font-weight: 400;
+                    margin-top: 5px;
+                    line-height: normal;"></label>
+                      <div id="forgot" class="text" style="margin-left: 60%;color: #7B7B7B;
+                    
+                      margin-top: 5px;
+                      "><a href="#" style="color: #7B7B7B;  text-align: center;
+                      font-family: Calibri;
+                      font-size: 10px;
+                      font-style: normal;
+                      font-weight: 400;
+                      line-height: normal;">Didn’t received code?  <span style="color: #2EBAB1;
+                        font-family: Calibri;
+                        font-size: 12px;
+                        font-style: normal;
+                        font-weight: 700;
+                        line-height: normal;">Resend</span></a></div>
+                </div>
+                <div  class="button input-box" style="text-decoration: none; margin-top: 25px;margin-bottom:15px;">   
+
+                  <a href="email.html" style="width: 551px;
+                  border-radius: 30px;
+  border: 1px solid #52459D;
+  background: #52459D;
+  text-decoration: none;
+  color: white;
+  text-align: center;
+  line-height: 40px;
+                  height: 39px;
+                  flex-shrink: 0;" type="submit">Verify</a>
+                  </div>
+                <div>
+
+</div>
+
+<div class="text" style="margin-left: 32%;margin-top:2%;color:#7B7B7B;
+font-family: Calibri;
+font-size: 12px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;"><a href="#"  style="color: #7B7B7B;">Forgot password? <span style="color: #2EBAB1;
+  font-family: Calibri;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;">Reset</span></a></div>
+              </div>
+
+            </form>
+          </div>
+          
+          
+        
+    </div>
+    </div>
+  </div>
+  <script>
+    // الحصول على جميع حقول الإدخال
+    const inputs = document.querySelectorAll('.verification-input');
+
+    // إضافة حدث للانتقال بين الحقول
+    inputs.forEach((input, index) => {
+      input.addEventListener('input', () => {
+        if (input.value.length >= 1 && index < inputs.length - 1) {
+          inputs[index + 1].focus();
+        }
+      });
+
+      input.addEventListener('keydown', (event) => {
+        if (event.key === 'Backspace' && index > 0) {
+          inputs[index - 1].focus();
+        }
+      });
+    });
+  </script></body>
+</html>

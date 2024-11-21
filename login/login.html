@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<!-- Created by CodingLab |www.youtube.com/c/CodingLabYT-->
+<html lang="en" dir="ltr">
+  <head>
+    <link rel="shortcut icon" type="image/x-icon" href="../images/logo.png">
+    <title>Amaly</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <!-- Fontawesome CDN Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+    <!-- إضافة ملف CSS للمكتبة -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.min.css">
+
+<!-- إضافة ملف JS للمكتبة -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+
+    <style>
+      .password-container {
+        position: relative;
+        width: 250px;
+      }
+
+      .password-input {
+        width: 100%;
+        padding: 10px;
+        padding-right: 40px;
+        box-sizing: border-box;
+      }
+
+      .toggle-password {
+        position: absolute;
+        right: 10px;
+        top: 50%;
+        transform: translateY(-50%);
+        cursor: pointer;
+        font-size: 1.2em;
+      }
+
+      .checkbox-container {
+        display: flex;
+        align-items: center;
+        margin-top: 10px;
+      }
+
+      .checkbox-container label {
+        margin-left: 5px;
+      }
+
+      @media (max-width: 1024px) {
+        .cover {
+          display: none;
+        }
+
+        .logo {
+          position: relative;
+        }
+
+        .showPassword {
+          margin-right: 259px;
+        }
+
+        #forgots {
+          line-height: 30px;
+          margin-left: 10%;
+        }
+
+        .showPassword {
+          margin-right: 5%;
+        }
+
+        body {
+          width: 160%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container2">
+      <div class="cover" style="height: 100%;">
+        <div class="front">
+          <img src="images/happy-friendly-man-doctor-presenting-copyspace-his-palm.jpg" alt="" style="width: 100%;">
+          <div class="text">
+            <span class="text-1">
+              Can’t go to the hospital? Book video call appointments with your doctor within the app in a few minutes
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <div class="forms">
+        <div class="form-content">
+          <div class="login-form" style="margin-right: 48%;">
+            <div class="logo">
+              <img src="../images/logo.png" class="logo1" style="width: 60px;" alt="Logo">
+              <img src="../images/logo1.png" class="logo2" style="margin-bottom: 10px;width:100px;" alt="Logo">
+            </div>
+<form class="log" action="#" id="loginForm">
+    <div style="color: #4D4E59; margin-bottom: 5%; margin-top: 10%; font-family: Calibri; font-size: 30px; font-style: normal; font-weight: 700; line-height: 15px;">
+        <p>Login</p>
+        <br />
+        <span class="enter" style="color: #7B7B7B; font-family: Calibri; font-size: 14px; font-style: normal; font-weight: 400; line-height: 40px;">
+            Enter your phone number and password to enter your account
+        </span>
+    </div>
+
+ <div class="input-boxes" style="margin-bottom: 20px;">
+    <h3 style="margin-bottom: 8px;font-size: 12px;">Mobile Number</h3>
+    <div class="iti iti--allow-dropdown">
+        <div class="iti__flag-container">
+            <div class="iti__selected-flag" role="combobox" aria-controls="iti-0__country-listbox" aria-owns="iti-0__country-listbox" aria-expanded="false" tabindex="0" title="United States: +1" aria-activedescendant="iti-0__item-us-preferred">
+                <div class="iti__flag iti__us"></div>
+                <div class="iti__arrow"></div>
+            </div>
+            <ul class="iti__country-list iti__country-list--dropup iti__hide" id="iti-0__country-listbox" role="listbox" aria-label="List of countries"></ul>
+        </div>
+        <input id="phone" type="tel" name="phone" style="width: 250%; height: 38px; flex-shrink: 0;border-radius: 36px; background: #F5F5F7;border: none;" placeholder="Enter Mobile Number" autocomplete="off" data-intl-tel-input-id="0">
+    </div>
+</div>
+
+   <div class="input-boxes">
+    <h3 style="margin-bottom: 8px;font-size: 12px;">Password</h3>
+    <div class="password-container">
+        <input id="password" type="password" style="width: 222%; height: 38px; flex-shrink: 0;border-radius: 36px; background: #F5F5F7;border: none;" class="password-input" placeholder="Enter your password">
+      <span class="toggle-password" id="togglePassword">
+                    <i class="fas fa-eye" style="color: rgba(82, 69, 157, 1) ;margin-left: 1400%;"></i>
+                  </span>
+                </div>
+    
+
+    <div class="checkbox-container" style="display: flex;">
+        <input type="checkbox" style="border-radius: 10px;" id="showPassword" control-id="ControlID-3">
+        <label for="showPassword" class="showPassword" style="color: #7B7B7B; text-align: center; font-family: Calibri; font-size: 15px; font-weight: 400; margin-top: 5px;">Remember me</label>
+        <div id="forgot" class="text" style="margin-left: 50%; color: #7B7B7B; text-align: center; font-family: Calibri; font-size: 10px; font-weight: 400; margin-top: 5px;">
+            <a href="#">Forgot password? <span style="color: #2EBAB1; font-family: Calibri; font-size: 12px; font-weight: 700;">Reset</span></a>
+        </div>
+    </div>
+
+    <div class="button input-box" style="text-decoration: none; margin-top: 25px; margin-bottom: 15px;">
+        <button id="loginButton" type="button" style="width: 551px; border-radius: 30px; border: 1px solid #52459D; background: #52459D; text-decoration: none; color: white; text-align: center; line-height: 40px; height: 39px; flex-shrink: 0;">
+            Login
+        </button>
+    </div>
+
+    <div style="display: flex;">
+        <hr style="margin-top: 2.5%; width: 250px; height: 0px; margin-left: 15px; flex-shrink: 0; stroke-width: 1px; stroke: #D9D9D9;">
+        <span style="color: #7B7B7B; text-align: center; font-family: Calibri; font-size: 20px; font-weight: 400;">or</span>
+        <hr style="margin-top: 2.5%; width: 250px; height: 0px; flex-shrink: 0; stroke-width: 0.5px; stroke: #D9D9D9;">
+    </div>
+
+    <div style="display: flex; margin-left: 30px;">
+        <div style="width: 220px; display: flex; height: 32px; flex-shrink: 0; border-radius: 48px; margin-left: 15px; margin-top: 10px; border: 1.5px solid #BABABA; background: #FFF;">
+            <a href="" style="text-decoration: none;">
+                <img src="../images/google.png" style="width: 20px; margin-left: 20px; margin-top: 5px;" alt="">
+            </a>
+            <a href="" style="text-decoration: none; color: #4D4E59; font-family: Calibri; font-size: 16px; font-weight: 700; line-height: 30px; margin-left: 12px;">Signup with Google</a>
+        </div>
+
+        <div style="width: 220px; display: flex; height: 30px; flex-shrink: 0; border-radius: 48px; margin-left: 35px; margin-top: 10px; border: 1.5px solid #BABABA; background: #FFF;">
+            <a href="" style="text-decoration: none;">
+                <img src="../images/qr.png" style="width: 20px; margin-left: 20px; margin-top: 5px;" alt="">
+            </a>
+            <a href="" style="text-decoration: none; color: #4D4E59; font-family: Calibri; font-size: 16px; font-weight: 700; line-height: 30px; margin-left: 12px;">Scan QR Code</a>
+        </div>
+    </div>
+</form>
+
+          </div>
+        </div>
+      </div>
+    </div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+    <script>
+      const passwordInput = document.getElementById("password");
+      const togglePassword = document.getElementById("togglePassword");
+      
+      togglePassword.addEventListener("click", function () {
+        const type = passwordInput.type === "password" ? "text" : "password";
+        passwordInput.setAttribute("type", type);
+        this.innerHTML = type === "password" 
+          ? '<i class="fas fa-eye"></i>' 
+          : '<i class="fas fa-eye-slash"></i>';
+      });
+ // تهيئة مكتبة intl-tel-input
+const phoneInput = document.querySelector("#phone");
+const iti = window.intlTelInput(phoneInput, {
+    initialCountry: "auto",  // تعيين الدولة المبدئية تلقائيًا
+    geoIpLookup: function(callback) {
+        fetch('https://ipinfo.io/json?token=<Your-API-Token>', { method: 'GET' })
+            .then((response) => response.json())
+            .then((data) => callback(data.country))
+            .catch(() => callback("us")); // إذا فشل البحث في استخدام الـ API، سيتم استخدام "us"
+    },
+    utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js"
+});
+
+document.getElementById('loginButton').addEventListener('click', function (e) {
+    e.preventDefault(); // منع السلوك الافتراضي للزر
+    var phone = document.getElementById('phone').value.trim();
+    var password = document.getElementById('password').value.trim();
+    // استخراج كود البلد
+    var countryCodeElement = document.querySelector('.iti__selected-flag');
+    var countryCode = countryCodeElement ? countryCodeElement.getAttribute('title').split(': ')[1] : '';
+    // التحقق من أن الحقول مملوءة
+    if (!phone || !password || !countryCode) {
+        alert('Please fill in all the fields correctly.');
+        return;
+    }
+    // البيانات المُرسلة
+    var requestData = {
+        Password: password,
+        Phone: phone, // دمج كود البلد مع الرقم
+        CountryCode: countryCode,
+    };
+    // إرسال الطلب إلى API
+    fetch('https://engaztechnology.net/Amaly_Web/amlyApi/login.php', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(requestData),
+    })
+    .then(response => response.json())
+    .then(data => {
+        // التحقق من صحة الاستجابة
+        if (requestData.status === 'success') {
+            window.location.href = '../index.html'; // الانتقال للصفحة في حال نجاح التحقق
+        }
+         else if(requestData.status !== 'success') {
+            alert('Invalid phone number or password.'); // عرض رسالة خطأ عند الفشل
+        }
+    })
+    .catch(error => {
+        console.error('Error:', error);
+        alert('An error occurred. Please try again later.');
+    });
+});
+      const inputField = document.querySelector('input[type="tel"]');
+      intlTelInput(inputField, {
+        utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js"
+      });
+    </script>
+  </body>
+</html>
